@@ -1,68 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pratik Kashte Portfolio</title>
+<title>Calculator</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Pratik Kashte</h1>
-    <p>Aspiring Full Stack Developer | AI/ML Enthusiast</p>
-</header>
+<div class="calculator">
+    <input type="text" id="display" readonly>
 
-<section id="about">
-    <h2>About Me</h2>
-    <img src="profile.jpg.jpeg" alt="Pratik" width="200">
-    <p>
-        I am a Computer Science student passionate about
-        Full Stack Development, Artificial Intelligence,
-        Machine Learning and Problem Solving.
-    </p>
-</section>
+    <button onclick="append('7')">7</button>
+    <button onclick="append('8')">8</button>
+    <button onclick="append('9')">9</button>
+    <button onclick="append('/')">/</button>
 
-<section id="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>Java</li>
-        <li>SQL</li>
-    </ul>
-</section>
+    <button onclick="append('4')">4</button>
+    <button onclick="append('5')">5</button>
+    <button onclick="append('6')">6</button>
+    <button onclick="append('*')">*</button>
 
-<section id="projects">
-    <h2>Projects</h2>
+    <button onclick="append('1')">1</button>
+    <button onclick="append('2')">2</button>
+    <button onclick="append('3')">3</button>
+    <button onclick="append('-')">-</button>
 
-    <div>
-        <h3>Portfolio Website</h3>
-        <p>Personal portfolio website using HTML and CSS.</p>
-    </div>
+    <button onclick="append('0')">0</button>
+    <button onclick="append('.')">.</button>
+    <button onclick="calculate()">=</button>
+    <button onclick="append('+')">+</button>
 
-    <div>
-        <h3>Student Management System</h3>
-        <p>System to manage student records efficiently.</p>
-    </div>
-</section>
+    <button onclick="clearDisplay()">C</button>
+</div>
 
-<section id="resume">
-    <h2>Resume</h2>
-    <a href="resume.pdf.docx" download>Download Resume</a>
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: kashtepratik76@gmail.com</p>
-    <p>Phone: +91 9699919921</p>
-</section>
-
-<footer>
-    <p>© 2026 Pratik Kashte. All Rights Reserved.</p>
-</footer>
-
+<script src="script.js"></script>
 </body>
 </html>
